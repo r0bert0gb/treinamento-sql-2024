@@ -13,7 +13,7 @@ WHERE id_disciplina IN (1, 2);
 SELECT * FROM tt_disciplinas
 WHERE id_disciplina IN (SELECT ID_DISCIPLINA FROM tt_solicitacoes_matriculas);
 
--- Exercício:
+-- Exercicio:
 -- trazer areas de atuacao que tenham correspondencia em tt_disciplinas
 SELECT * FROM tt_areas_atuacoes
 WHERE id_area_atuacao IN(SELECT id_area_atuacao FROM tt_disciplinas);

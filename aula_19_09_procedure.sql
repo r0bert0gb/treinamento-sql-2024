@@ -9,7 +9,7 @@ CREATE OR REPLACE PROCEDURE PRC_AREAS_ATUACOES (P_NOME_ATUACAO VARCHAR2) IS
     v_proximo_id INTEGER;
 BEGIN
 
-    -- Descobrir o último ID:
+    -- Descobrir o ultimo ID:
     SELECT MAX(id_area_atuacao) + 1 INTO v_proximo_id FROM tt_areas_atuacoes;
 
     -- Se existe o nome:
@@ -18,7 +18,7 @@ BEGIN
     END LOOP;
 
     IF v_qtde_areas = 0 THEN
-        -- Inclusão
+        -- Inclusao
         INSERT INTO tt_areas_atuacoes(id_area_atuacao, nome_atuacao, criado_em, alterado_em)
             VALUES(v_proximo_id, p_nome_atuacao, sysdate, sysdate);
         COMMIT;

@@ -9,7 +9,7 @@ drop sequence seq
 -- Criando a partir do valor 10:
 CREATE SEQUENCE seq_areas_atuacoes START WITH 10;
 
--- ver o proximo valor da sequence através da tabela DUAL
+-- ver o proximo valor da sequence atraves da tabela DUAL
 SELECT seq_tipos_disciplinas.nextval FROM dual;
 
 -- ######### Triggers

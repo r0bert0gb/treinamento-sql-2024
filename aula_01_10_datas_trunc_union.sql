@@ -1,6 +1,5 @@
 -- Aula 01/10/2024
 
-
 -- trunk, round
 SELECT TRUNC(22.43), ROUND(22.43), ROUND(22.53) FROM DUAL;
 
